@@ -8,19 +8,19 @@ public class ImperialService {
     private final InchToCentimeter i2c = new InchToCentimeter();
     private final YardToMeter y2m = new YardToMeter();
 
-    private double getCentimeter() {
+    public double getCentimeter() {
         return i2c.getCentimeter();
     }
 
-    private double getMeter() {
+    public double getMeter() {
         return y2m.getMeter();
     }
 
-    private void calculateCentimeter(double inch) {
+    public void calculateCentimeter(double inch) {
         i2c.convertValues(inch);
     }
 
-    private void calculateMeter(double yard) {
+    public void calculateMeter(double yard) {
         y2m.convertValues(yard);
     }
 }
